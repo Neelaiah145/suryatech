@@ -1,0 +1,211 @@
+/* ===== SECTION ===== */
+.mv-section {
+  padding: 30px 0;
+}
+
+/* ===== GRID ===== */
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* ===== CARD BASE ===== */
+.mv-card {
+  position: relative;
+  border-radius: 16px;
+  padding: 15px;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+/* ===== CARD TYPES ===== */
+.mv-dark {
+  background: #251444;
+  color: #ffffff;
+}
+
+.mv-light {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== HOVER ===== */
+.mv-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+/* ===== ICON ===== */
+.mv-card__icon-wrap {
+  width: 52px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  
+  transition: all 0.35s ease;
+}
+
+/* ICON COLORS */
+.mv-dark .mv-card__icon-wrap {
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+}
+
+.mv-light .mv-card__icon-wrap {
+  background: #f1f5f9;
+  color: #251444;
+}
+
+/* ICON HOVER */
+.mv-card:hover .mv-card__icon-wrap {
+  transform: scale(1.15) rotate(-3deg);
+}
+
+/* ===== TITLE ===== */
+/* .mv-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+} */
+
+/* ===== TEXT ===== */
+/* .mv-card__text {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+} */
+
+/* FIX TEXT COLOR */
+.mv-dark .mv-card__text {
+  color: #ffffff;
+}
+
+.mv-light .mv-card__text {
+  color: #000;
+}
+
+/* ===== LIST ===== */
+.mv-card__list {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.mv-card__list li {
+  display: flex;
+  gap: 8px;
+  padding: 4px 0;
+ 
+}
+
+/* BULLETS */
+.mv-card__list li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+/* BULLET COLORS */
+.mv-dark .mv-card__list li::before {
+  background: #ffffff;
+  color:#000;
+}
+
+.mv-light .mv-card__list li::before {
+  background: #251444;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 575px) {
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.mv-card__title1{color:#fff}
+.mv-card--blue { background:#251444; color:#fff; }
+.mv-card--teal { background:#fff; color:#000; border:1px solid #e5e7eb; }
+.mv-card--coral { background:#fff; color:#000; border:1px solid #e5e7eb; }
+.mv-card--purple { background:#3b1f6b; color:#fff; }
+
+
+
+
+
+
+
+
+/* ICON BASE */
+.mv-card__icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-size: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* DEFAULT COLORS */
+.mv-dark .mv-card__icon-wrap {
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+}
+
+.mv-light .mv-card__icon-wrap {
+  background: #f1f5f9;
+  color: #251444;
+}
+
+/* HOVER ANIMATION */
+
+
+.mv-card:hover .mv-card__icon-wrap {
+  animation: popIcon 0.4s ease;
+}
+
+@keyframes popIcon {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1.1); }
+}
+
+/* COLOR FILL ANIMATION */
+.mv-card__icon-wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--ienet-base, #DF2339);
+  top: 100%;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+/* HOVER EFFECT (FILL UP) */
+.mv-card:hover .mv-card__icon-wrap::before {
+  top: 0;
+}
+
+/* ICON ABOVE BACKGROUND */
+.mv-card__icon-wrap i {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+/* ICON COLOR CHANGE */
+.mv-card:hover .mv-card__icon-wrap i {
+  color: #ffffff;
+}
