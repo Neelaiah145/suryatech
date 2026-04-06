@@ -12306,7 +12306,7 @@ body.megamenu-popup-active .mobile-nav__content {
   height: 232px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../images/telecom&optical\ fiber\ images/bread.png);
+  /* background-image: url(../images/telecom&optical\ fiber\ images/bread.png); */
   animation: movebounce2 3s linear 0s infinite;
 }
 @media (max-width: 1199px) {
@@ -12678,8 +12678,8 @@ body.megamenu-popup-active .mobile-nav__content {
   letter-spacing: 4px;
   line-height: 1;
   margin: 0 0 10px;
-  transition: transform 1000ms ease, opacity 1000ms ease;
-  transform: translateY(-200px);
+  /* transition: transform 1000ms ease, opacity 1000ms ease;
+  transform: translateY(-200px); */
   padding-bottom: 20px;
 }
 @media (max-width: 767px) {
@@ -12715,8 +12715,8 @@ body.megamenu-popup-active .mobile-nav__content {
   overflow: hidden;
   margin: 0 0 20px;
   opacity: 0;
-  transition: transform 1200ms ease, opacity 1200ms ease;
-  transform: translateX(200px);
+  /* transition: transform 1200ms ease, opacity 1200ms ease; */
+  /* transform: translateX(200px); */
   padding-bottom: 15px;
 }
 @media (max-width: 1450px) {
@@ -12737,8 +12737,8 @@ body.megamenu-popup-active .mobile-nav__content {
   color: var(--ienet-white, #fff);
   margin: 0 0 52px;
   opacity: 0;
-  transition: transform 1200ms ease, opacity 1200ms ease;
-  transform: translateX(-200px);
+  /* transition: transform 1200ms ease, opacity 1200ms ease;
+  transform: translateX(-200px); */
 }
 @media (max-width: 1450px) {
   .main-slider-one__text {
@@ -12938,7 +12938,7 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 .main-slider-one .active .main-slider-one__bg {
-  transition: transform 500ms ease, top 500ms ease;
+  /* transition: transform 500ms ease, top 500ms ease; */
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
 .main-slider-one .active .main-slider-one__sub-title {
@@ -12949,27 +12949,27 @@ body.megamenu-popup-active .mobile-nav__content {
 .main-slider-one .active .main-slider-one__title {
   opacity: 1;
   transform: translateX(0);
-  transition-delay: 1300ms;
+  /* transition-delay: 1300ms; */
 }
 .main-slider-one .active .main-slider-one__text {
   opacity: 1;
   transform: translateX(0);
-  transition-delay: 1500ms;
+  /* transition-delay: 1500ms; */
 }
 .main-slider-one .active .main-slider-one__btn {
   opacity: 1;
   transform: perspective(400px) rotateY(0deg) translateY(0px);
-  transition-delay: 1700ms;
+  /* transition-delay: 1700ms; */
 }
 .main-slider-one .active .main-slider-one__layer {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 1700ms;
+  /* transition-delay: 1700ms; */
 }
 .main-slider-one .active .main-slider-one__image {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 1900ms;
+  /* transition-delay: 1900ms; */
 }
 
 .main-slider-two {
@@ -13008,7 +13008,7 @@ body.megamenu-popup-active .mobile-nav__content {
   display: block;
   margin: 0;
   padding: 0;
-  transition: all 500ms ease;
+  /* transition: all 500ms ease; */
   position: relative;
   z-index: 2;
 }
@@ -13028,7 +13028,7 @@ body.megamenu-popup-active .mobile-nav__content {
   box-shadow: none;
   margin: 0;
   padding: 0;
-  transition: all 500ms ease;
+  /* transition: all 500ms ease; */
   position: relative;
   z-index: 2;
 }
@@ -13047,7 +13047,7 @@ body.megamenu-popup-active .mobile-nav__content {
   height: 49px;
   border-radius: 100px 0 0 100px;
   content: "";
-  transition: all 500ms ease;
+  /* transition: all 500ms ease; */
   border: 1px solid var(--ienet-white, #fff);
   opacity: 0;
   z-index: -1;
@@ -13101,11 +13101,11 @@ body.megamenu-popup-active .mobile-nav__content {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.5s;
+  /* transition: 0.5s; */
   background-size: cover;
 }
 .main-slider-two__bg img:nth-child(1) {
-  transform: translatex(50%) scalex(2);
+  /* transform: translatex(50%) scalex(2); */
   opacity: 0;
   filter: blur(10px);
 }
@@ -14072,8 +14072,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .feature-one__image__border img {
   max-width: 80%;
   height: auto;
-  animation: treeMove2 4s linear 0s infinite;
-  border-radius: 214px;
+  /* animation: treeMove2 4s linear 0s infinite; */
+  border-radius: 50px;
 }
 .feature-one__image__router {
   position: absolute;
@@ -14712,8 +14712,9 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-two__content {
   position: relative;
   padding-left: 30px;
-  padding-top: 35px;
+  padding-top: 45px;
 }
+
 @media (max-width: 1199px) {
   .about-two__content {
     padding: 45px 0 0;
