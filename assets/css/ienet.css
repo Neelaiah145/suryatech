@@ -301,6 +301,13 @@ h6 {
     display: none;
   }
 }
+/* .service-page__item__title{
+ font-family: "Poppins", sans-serif !important;
+}
+.feature-one__box__title{
+   font-family: "Poppins", sans-serif !important;
+
+} */
 
 @media (max-width: 575px) {
   p br {

@@ -805,6 +805,9 @@
       $("body").toggleClass("locked");
     });
   }
+  // service section code
+  
+
 })(jQuery);
 
 
